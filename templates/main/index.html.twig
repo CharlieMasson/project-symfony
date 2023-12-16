@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Connecté{% endblock %}
+
+{% block body %}
+    Vous êtes connecté(e) en tant que: {{ app.user.identifiant  }}
+    <br>
+    <a href="{{ path('app_logout')}}">Déconnexion</a>
+{% endblock %}
